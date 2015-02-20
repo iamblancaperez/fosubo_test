@@ -1,0 +1,82 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+	background-color: whitesmoke;
+	padding: 60px;
+}
+.name-brand{
+	background-color: #364049;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.name-brand a{
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.navbar-inverse {
+	background-color: #556271;
+	border:none;
+}
+
+.question h3{
+	text-align: center;
+}
+
+.grayborder{
+	opacity: 0;
+	width: 0;
+}
+
+.grayborder + label{
+	min-width: 45px;
+	min-height: 45px;
+	border-radius: 50%;
+	border: solid #909090 5px;
+	text-align: center;
+	line-height: 38px;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.grayborder.redborder:checked + label{
+	border: solid red 5px;
+}
+
+.grayborder.orangeborder:checked + label{
+	border: solid orange 5px;
+}
+
+.grayborder.yellowborder:checked + label{
+	border: solid yellow 5px;
+}
+
+.grayborder.turqoiseborder:checked + label{
+	border: solid DarkTurquoise 5px;
+}
+
+.grayborder.greenborder:checked + label{
+	border: solid green 5px;
+}
+
