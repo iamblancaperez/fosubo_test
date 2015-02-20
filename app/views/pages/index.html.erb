@@ -1,0 +1,31 @@
+<% content_for :name_page do %>
+  <%= image_tag("fosubo_logo.png") %>
+<% end %>
+
+<div class="container mt100">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+			<h2 class="text-center">Test disponibles</h2>		
+			<table class="table table-condensed">
+	      <thead>
+	        <tr>
+	          <th>#</th>
+	          <th>Nombre</th>
+	          <th>Tomar test</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      	<% @tests.each_with_index do |value,index| %>
+		        <tr>
+		          <th scope="row"><%= index + 1 %></th>
+		          <td><%=value.name%></td>
+		          <td>
+		          	<%= link_to("Tomar", new_page_path(:test_id => value.id), html_options = {:class => "btn btn-blue btn"}) %>
+		          </td>
+		        </tr>
+	        <% end %>
+	      </tbody>
+	    </table>
+		</div>
+	</div>
+</div>
