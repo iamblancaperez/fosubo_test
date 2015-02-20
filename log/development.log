@@ -9964,3 +9964,7 @@ Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 
 
 
 Started GET "/assets/fosubo_logo-fbde19db2e5b4793054580ce2e8f6c92.png" for 127.0.0.1 at 2015-02-20 16:03:32 -0430
+  [1m[35mQuestion Load (1.7ms)[0m  SELECT "questions".* FROM "questions"
+  [1m[36mQuestion Load (1.0ms)[0m  [1mSELECT  "questions".* FROM "questions"  ORDER BY "questions"."id" ASC LIMIT 1[0m
+  [1m[35mQuestion Load (1.3ms)[0m  SELECT  "questions".* FROM "questions"  ORDER BY "questions"."id" ASC LIMIT 1
+  [1m[36mTest Load (1.3ms)[0m  [1mSELECT "tests".* FROM "tests"[0m

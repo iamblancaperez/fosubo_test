@@ -17,4 +17,8 @@ class PagesController < ApplicationController
   	redirect_to root_path
   end
 
+  def show_results
+    @test = params[:id]
+  end
+
 end
