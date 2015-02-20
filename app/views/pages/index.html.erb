@@ -12,6 +12,7 @@
 	          <th>#</th>
 	          <th>Nombre</th>
 	          <th>Tomar test</th>
+	          <th>Ver resultados</th>
 	        </tr>
 	      </thead>
 	      <tbody>
@@ -21,6 +22,9 @@
 		          <td><%=value.name%></td>
 		          <td>
 		          	<%= link_to("Tomar", new_page_path(:test_id => value.id), html_options = {:class => "btn btn-blue btn"}) %>
+		          </td>
+		          <td>
+		          	<%= link_to("Ver", show_results_page_path(:id => value.id), html_options = {:class => "btn btn-blue btn"}) %>
 		          </td>
 		        </tr>
 	        <% end %>

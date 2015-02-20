@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	before_action :authenticate_user!
+	before_action :authenticate_user!, only: [:create]
   def index
   	@tests = Test.all
   end
@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   end
 
   def show_results
-    @test = params[:id]
+    @test = Test.find params[:id]
   end
 
 end

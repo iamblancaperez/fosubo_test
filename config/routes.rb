@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     root to: "pages#index"
     resources :pages do 
       member do
-        show_results
+        get 'show_results'
       end
     end
 
