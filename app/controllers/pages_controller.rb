@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	before_action :authenticate_user!, only: [:create]
+	before_action :authenticate_user!
   def index
   	@tests = Test.all
   end
