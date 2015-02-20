@@ -1,12 +1,12 @@
 class PagesController < ApplicationController
 	before_action :authenticate_user!
   def index
-  	test = Test.first
-  	@questions = test.questions
+  	@tests = Test.all
   end
 
   def new
-  	puts params
+  	@test = Test.find(params[:test_id])
+  	@questions = @test.questions
   end
 
   def create 
