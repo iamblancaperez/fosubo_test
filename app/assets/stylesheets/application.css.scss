@@ -37,7 +37,17 @@ body{
 	border:none;
 }
 
+.separador{
+	border-bottom: 1px #BFBFBF solid;
+	padding-bottom: 50px;
+}
 .question h3{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.option1,.option2,.option3,.option4, .option0{
 	text-align: center;
 }
 
@@ -47,9 +57,10 @@ body{
 }
 
 .grayborder + label{
-	min-width: 45px;
-	min-height: 45px;
-	border-radius: 50%;
+	box-sizing: border-box;
+	min-width: 50px;
+	min-height: 50px;
+	border-radius: 25px;
 	border: solid #909090 5px;
 	text-align: center;
 	line-height: 38px;
@@ -80,3 +91,16 @@ body{
 	border: solid green 5px;
 }
 
+.mt30{
+	margin-top: 30px;
+}
+
+.btn-blue{
+	background-color: #4e699f;
+	border-radius: 40px;
+}
+
+.btn-blue:hover{
+	background-color: #394A6C;
+	border-radius: 40px;
+}
